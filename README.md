@@ -1,7 +1,21 @@
-tldr
-====
+## tldr
 
-the responsive /dev/null
+Pipe output from commands yielding verbose stdout output you're for the moment not interested in. You'll get progress and have the data saved in a tempfile.
 
-tldr eats output from commands yielding amounts of output you don't need but still would like "progress" from.
-Basically, it is ``while read line; do printf "."; done`` on drugs
+## Usage
+``` shell
+$ command_that_yields_verbose_data | tldr
+...........
+TLDR; output stored in /tmp/tldr.k4Wrq
+```
+
+## Installation
+
+``` shell
+$ # Get it
+$ git clone https://github.com/sebastiant/tldr.git
+$ # Add symlink to a directory in PATH, depending on your environment:
+$ sudo ln -sf `pwd`/tldr/tldr.sh /usr/local/bin/tldr
+```
+
+TLDR; this is a meta-joke
