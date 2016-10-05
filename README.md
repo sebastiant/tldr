@@ -14,8 +14,8 @@ TLDR; output stored in /tmp/tldr.k4Wrq
 ``` shell
 $ # Get it
 $ git clone https://github.com/sebastiant/tldr.git
-$ # Add symlink to a directory in PATH, depending on your environment:
-$ sudo ln -sf `pwd`/tldr/tldr.sh /usr/local/bin/tldr
+$ # Add hard link to a directory in PATH, depending on your environment:
+$ sudo ln `pwd`/tldr/tldr.sh /usr/local/bin/tldr
 ```
 
 TLDR; this is a meta-joke
